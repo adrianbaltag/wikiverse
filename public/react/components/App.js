@@ -22,17 +22,18 @@ export const App = () => {
   }, []);
 
   //page handler->open
-  // const handlerOpenPage = () => {
-
-  // }
-
+	console.log(pages)
   return (
     <main>
       <h1>WikiVerse</h1>
-      <h2>An interesting 📚</h2>
+
+      <h2>Click on an article for more info &#x2193;</h2>
+	
+		<PagesList pages={pages} />
+	
       
-        <PagesList pages={pages} />
-      
+	
+
     </main>
   );
 };
