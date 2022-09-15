@@ -21,7 +21,7 @@ color: #051422;
 }
 
 main {
-  border-left: 1px solid #071e33;
+  border-left: 1px solid #8cb2d5;
   width: 100%;
   min-height: 50vh;
   padding: 1em;
@@ -34,6 +34,7 @@ h1 {
   text-align: center;
   letter-spacing: 5px;
   font-weight: 100;
+  font-size: 3rem;
   text-decoration: overline #8cb2d5;
 }
 

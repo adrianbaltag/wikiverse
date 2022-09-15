@@ -1,23 +1,24 @@
 import React, { useState } from "react";
+import { Page } from "./Page";
 
-export const CardInfo = () => {
-  const [show, setShow] = useState(false);
-  const handlerLink = () => {
-    setShow(true);
-  };
+export function CardInfo ({data, setData}){
+ 
   
+const  handlerReturn = () => {
+  setData(false)
+}
+
   return (
-   
     <>
       <div >
-        {show ? <h2>{props.page.title}</h2> : null}
-        {show ? <h4>{`Author Name - ID: ${props.page.id}`}</h4> : null}
-        {show ? <p>{props.page.content}</p> : null}
+        <h2>{data.title}</h2> 
+        <h4>{data.author.name}</h4> 
+      <p>{data.content}</p> 
         {/* fix date to render */}
-        {show ? <h2>{props.page.date}</h2> : null}
+    <h2>{data.date}</h2> 
         {/* tags??? */}
-        {show ? <h2>{props.tags}</h2> : null}
-        {show ? <button>Back to Wiki List</button> : null}
+      <h2>{data.tags.map((tag, idx) => {return <p key={idx}>{tag.name}</p> })}</h2>
+        <button onClick={handlerReturn}>Back to Wiki List</button>
       </div>
     </>
   );
