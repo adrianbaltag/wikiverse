@@ -79,7 +79,7 @@ export const App = () => {
             displayAuthorData={displayAuthorData}
           />
 
-          <button onClick={() => setAddArticle(true)}>Add Article</button>
+          <button className="addArticle" onClick={() => setAddArticle(true)}>Add Article</button>
         </div>
       )}
     </main>

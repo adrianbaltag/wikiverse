@@ -1,8 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@100;300&display=swap');
-
-
-
-
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@100;300&display=swap");
 
 * {
   margin: 0;
@@ -16,8 +12,8 @@ body {
   align-items: center;
   height: 100vh;
   background-color: #1864ab;
-  font-family: 'Noto Serif Display', serif;
-color: #051422;
+  font-family: "Noto Serif Display", serif;
+  color: #051422;
 }
 
 main {
@@ -40,12 +36,55 @@ h1 {
 
 h2 {
   margin-bottom: 1em;
+  font-weight:700;
+
+  line-height: 1.4;
+  letter-spacing: 1.6px;
+  cursor: pointer;
+  color: #051422;
 }
 
 .ascii-arrow {
+  color: #051422;
+}
+
+h3 {
+  line-height: 1.4;
+  letter-spacing: 1.6px;
+  cursor: pointer;
   color: #8cb2d5;
+}
+
+h3:hover {
+  color: #e8f0f7;
+  text-decoration: underline;
+  transition: all 0.3s;
+}
+
+h4 {
+  color: #e8f0f7;
+  
 }
 
 p {
   line-height: 1;
+  color: #e8f0f7;
+}
+/* button */
+.addArticle {
+  margin-top: 2em;
+  font-size: 1.4rem;
+  border: 1px solid #e8f0f7;
+  background: transparent;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  color: #e8f0f7;
+}
+
+.addArticle:hover {
+  background-color: #e8f0f7;
+  color: #1864ab;
+  transition: all 0.3s;
 }
